@@ -55,7 +55,7 @@ export const Introduction = () => {
         )}
 
         <div className="flex item-center justify-between">
-          <h3 className=" text-2xl mt-4 font-semibold mb-6 text-green-700">
+          <h3 className=" text-2xl mt-16 lg:mt-4 font-semibold mb-6 text-green-700">
           Introduction | PreSchool
           </h3>
           <button onClick={() => setDocNavbarOpen(true)} className="p-0">
@@ -64,7 +64,7 @@ export const Introduction = () => {
           </button>
         </div>
 
-        <div className="w-full flex justify-between lg:gap-0 gap-6 lg:flex-nowrap flex-wrap p-2 rounded-md border border-dark_border border-opacity-60">
+        <div className="w-full grid grid-cols-2 lg:flex justify-between lg:gap-0 gap-6 lg:flex-nowrap flex-wrap p-2 rounded-md border border-dark_border border-opacity-60">
           {PackageVersions &&
             PackageVersions.map((item) => {
               return (
@@ -89,19 +89,19 @@ export const Introduction = () => {
           <p className="text-base font-medium text-muted text-opacity-60">
             <span className="text-amber-500 font-bold">SAMSRIAH SCHOOL</span> is an English and French expressions school.
           </p>
-          <p className="text-base font-medium text-muted text-opacity-60">
+          <p className="text-base font-medium text-black text-opacity-60">
             It has been established for 10 years. So, our Teachers are dedicated.
           </p>
-          <p className="text-base font-medium text-muted text-opacity-60">
+          <p className="text-base font-medium text-black text-opacity-60">
             This school follows Malagasy Ministry's Programs. But the communication's languages are English and French.
           </p>
         </div>
 
         <div className="mt-5">
-          <p className="text-base font-medium text-muted text-opacity-60">
+          <p className="text-base font-medium text-black text-opacity-60">
             <span className="text-amber-500 font-bold">PreSchool</span> has four grades: <span className="text-red-500 font-bold">TPS</span> - <span className="text-red-500 font-bold">PS</span> - <span className="text-red-500 font-bold">MS</span> - <span className="text-red-500 font-bold">GS</span>
           </p>
-          <p className="text-base font-medium text-muted text-opacity-60">
+          <p className="text-base font-medium text-black text-opacity-60">
             For each of those grades, kids have their own skills. The more they upgrade, the more skill they have
           </p>
         </div>

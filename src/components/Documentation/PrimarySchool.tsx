@@ -12,7 +12,7 @@ export const PackageStructure = () => {
   ];
   return (
     <div id="structure" className="md:scroll-m-[130px] scroll-m-28">
-      <h3 className="text-2xl font-semibold mt-8 text-green-700">
+      <h3 className="text-2xl font-semibold mt-8 text-green-500">
         Primary School
       </h3>
       <div className="rounded-md p-6 pt-3 border border-dark_border border-opacity-60 mt-6">

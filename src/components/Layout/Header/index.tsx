@@ -10,6 +10,7 @@ import Signin from "@/components/Auth/SignIn";
 import SignUp from "@/components/Auth/SignUp";
 import { useTheme } from "next-themes";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { motion } from "framer-motion";
 
 const Header: React.FC = () => {
   const pathUrl = usePathname();
@@ -69,13 +70,22 @@ const Header: React.FC = () => {
   }, [isSignInOpen, isSignUpOpen, navbarOpen]);
 
   return (
-    <header
+    <motion.header
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        type: "tween",
+        bounce: 0.4,
+        duration: .1,
+        delay: 0.2,
+        ease:[0.25,0.25,0.25,0.1]
+      }}
       className={`fixed top-0 z-40 w-full pb-3 transition-all duration-300 bg-white ${
         sticky ? " shadow-lg py-3" : "shadow-none py-3"
       }`}
     >
       <div className="lg:py-0 py-2">
-        <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md flex items-center justify-between">
+        <div className="container mx-auto lg:max-w-screen-xl xl:max-w-screen-2xl md:max-w-screen-md flex items-center justify-between">
           <Logo />
           <nav className="hidden lg:flex flex-grow items-center gap-6 ml-7 mr-7">
             {headerData.map((item, index) => (
@@ -137,7 +147,7 @@ const Header: React.FC = () => {
                       className="text-black hover:text-red-700 text-30 inline-block "
                     />
                   </button>
-                    <SignUp />
+                  <SignUp />
                 </div>
               </div>
             )}
@@ -146,38 +156,39 @@ const Header: React.FC = () => {
               className="block lg:hidden p-2 rounded-lg"
               aria-label="Toggle mobile menu"
             >
-              <span className="block w-6 h-0.5 bg-white"></span>
-              <span className="block w-6 h-0.5 bg-white mt-1.5"></span>
-              <span className="block w-6 h-0.5 bg-white mt-1.5"></span>
+              <span className="block w-6 h-0.5 bg-black"></span>
+              <span className="block w-6 h-0.5 bg-black mt-1.5"></span>
+              <span className="block w-6 h-0.5 bg-black mt-1.5"></span>
             </button>
           </div>
         </div>
         {navbarOpen && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40" />
+          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 z-40" />
         )}
         <div
           ref={mobileMenuRef}
-          className={`lg:hidden fixed top-0 right-0 rounded-lg h-50 w-full bg-black/90 shadow-lg transform transition-transform duration-300 max-w-xs ${
+          className={`lg:hidden fixed top-0 right-0 border-2 border-red h-full w-full bg-white shadow-lg transform transition-transform duration-300 max-w-xs ${
             navbarOpen ? "translate-x-0" : "translate-x-full"
           } z-50`}
         >
           <div className="flex items-center justify-between p-4">
-            <h1 className="bg-white mr-8">
+            <h1 className=" mr-8">
               <Logo />
             </h1>
 
             {/*  */}
+
             <button
               onClick={() => setNavbarOpen(false)}
               className="bg-[url('/images/closed.svg')] bg-no-repeat bg-contain w-5 h-5 absolute top-0 right-0 mr-4 mt-6 bg-red-500 px-3 py-3 rounded-full"
               aria-label="Close menu Modal"
             ></button>
           </div>
-          <nav className="flex flex-col items-start p-4 text-white">
+          <nav className="flex flex-col items-start p-4 text-gray-500">
             {headerData.map((item, index) => (
               <MobileHeaderLink key={index} item={item} />
             ))}
-            <div className="mt-4 flex flex-col space-y-4 w-full">
+            <div className="mt-4 flex text-white flex-col space-y-4 w-full">
               <Link
                 href="#"
                 className="bg-pink-700  py-2 rounded-full text-center hover:bg-green-500"
@@ -202,7 +213,7 @@ const Header: React.FC = () => {
           </nav>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };
 

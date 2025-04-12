@@ -7,6 +7,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { courseData } from "@/app/api/data";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/components/variants";
 
 const Courses = () => {
 
@@ -56,15 +58,26 @@ const Courses = () => {
     };
 
     return (
-        <section id="courses">
-            <div className='container mx-auto lg:max-w-screen-xl md:max-w-screen-md px-4'>
+        <section id="courses" className="bg-white">
+            <div className='container mx-auto lg:max-w-screen-xl xl:max-w-screen-2xl  md:max-w-screen-md px-4'>
                 <div className="sm:flex justify-between items-center ">
-                    <h2 className="text-midnight_text text-4xl lg:text-5xl font-semibold sm:mb-0">Our Sections.</h2>
+                    <motion.h2
+                     variants={fadeIn("right", 0.7)}
+                     initial="hidden"
+                     whileInView={"show"}
+                     viewport={{ once: false, amount: 0.7 }}
+                    className="text-midnight_text text-4xl lg:text-5xl font-semibold sm:mb-0">Our Sections.</motion.h2>
                     <Link href={'/'} className="text-primary text-lg font-medium hover:tracking-widest duration-500">Explore more&nbsp;&gt;&nbsp;</Link>
                 </div>
                 <Slider {...settings}>
                     {courseData.map((items, i) => (
-                        <div key={i}>
+                        <motion.div 
+                        variants={fadeIn("down", 0.3)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: false, amount: 0.7 }}
+                        
+                        key={i}>
                             <div className='bg-white m-3 mb-12 px-3 pt-3 pb-12 shadow-course-shadow rounded-2xl h-full'>
                                 <div className="relative rounded-3xl">
                                     <Image src={items.imgSrc} alt="course-image" width={389} height={262} className="m-auto clipPath" />
@@ -84,25 +97,10 @@ const Courses = () => {
                                         </div>
                                         <h3 className="text-xl font-medium text-red-500">${items.price}/Grade</h3>
                                     </div>
-                                    {/* <div className="flex justify-between pt-6">
-                                        <div className="flex gap-4">
-                                            <Icon
-                                                icon="solar:notebook-minimalistic-outline"
-                                                className="text-primary text-xl inline-block me-2"
-                                            />
-                                            <h3 className="text-base font-medium text-black opacity-75">{items.classes} classes</h3>
-                                        </div>
-                                        <div className="flex gap-4">
-                                            <Icon
-                                                icon="solar:users-group-rounded-linear"
-                                                className="text-primary text-xl inline-block me-2"
-                                            />
-                                            <h3 className="text-base font-medium text-black opacity-75">{items.students} students</h3>
-                                        </div>
-                                    </div> */}
+                                   
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </Slider>
             </div>

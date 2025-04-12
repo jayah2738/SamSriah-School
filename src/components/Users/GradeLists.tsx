@@ -12,17 +12,17 @@ const GradeLists: React.FC = () => {
     },
     {
       id: 2,
-      title: "Primary School",
+      title: "PrimarySchool",
       grades: ["CP1", "CP2", "CM1", "CM2"],
     },
     {
       id: 3,
-      title: "Middle School",
+      title: "MiddleSchool",
       grades: ["6Th", "7Th", "8Th", "9Th"],
     },
     {
       id: 4,
-      title: "High School",
+      title: "HighSchool",
       grades: [
         "10Th",
         "11Th L",
@@ -36,20 +36,20 @@ const GradeLists: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full p-10">
+    <div className="flex flex-col items-center lg:justify-center w-[100%] h-[100%] lg:w-full lg:h-full p-10">
       {sections.map((section) => (
         <div
           id={section.id.toString()}
           className="flex flex-col items-center w-full h-full pb-10"
         >
           <div className="flex items-center gap-8 md:gap-2 sm:gap-2">
-            <p className="border border-2 border-gray-300 w-64 md:w-0 sm:w-0 lg:w-80 h-0"></p>{" "}
+            <p className="border border-2 border-gray-300 md:w-0 sm:w-0 lg:w-80 h-0"></p>{" "}
             <div className="text-gray-500 font-semibold text-4xl md:text-3xl sm:text-3xl">
               {section.title}{" "}
             </div>
-            <p className="border border-2 border-gray-300 w-64 sm:w-0 lg:w-80 h-0"></p>
+            <p className="border border-2 border-gray-300 w-lg w-0 lg:w-80 h-0"></p>
           </div>
-          <div className="grid gap-4 transform md:grid-cols-2 sm:flex sm:flex-col ml-40 lg:grid lg:grid-cols-4 lg:ml-0">
+          <div className="grid gap-4 transform md:grid-cols-2 sm:flex sm:flex-col lg:ml-40 lg:grid lg:grid-cols-4 lg:ml-0">
               <div
                 className="container w-[300px] h-[150px] md:w-[250px] md:h-[150px] cursor-pointer  hover:-translate-y-10 transition duration-900"
                 style={{
