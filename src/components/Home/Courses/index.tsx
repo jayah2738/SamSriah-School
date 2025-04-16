@@ -16,10 +16,10 @@ const Courses = () => {
         dots: false,
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 2,
-        arrows: false,
+        slidesToScroll: 1,
+        arrows: true,
         autoplay: true,
-        speed: 1500,
+        speed: 3000,
         cssEase: "linear",
         responsive: [
             {
@@ -67,7 +67,7 @@ const Courses = () => {
                      whileInView={"show"}
                      viewport={{ once: false, amount: 0.7 }}
                     className="text-midnight_text text-4xl lg:text-5xl font-semibold sm:mb-0">Our Sections.</motion.h2>
-                    <Link href={'/'} className="text-primary text-lg font-medium hover:tracking-widest duration-500">Explore more&nbsp;&gt;&nbsp;</Link>
+                    <button onClick={()=>{window.alert('Coming soon...')}} className="text-primary text-lg font-medium hover:tracking-widest duration-500">Explore more&nbsp;&gt;&nbsp;</button>
                 </div>
                 <Slider {...settings}>
                     {courseData.map((items, i) => (
@@ -95,7 +95,7 @@ const Courses = () => {
                                                 {renderStars(items.rating)} {/* Dynamic stars */}
                                             </div>
                                         </div>
-                                        <h3 className="text-xl font-medium text-red-500">${items.price}/Grade</h3>
+                                        <h3 className="text-xl font-medium text-red-500"><span className='text-gray-500' >Max Students: </span>20/Grade</h3>
                                     </div>
                                    
                                 </div>

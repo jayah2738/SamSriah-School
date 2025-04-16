@@ -5,29 +5,32 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import { headerData } from "../Header/Navigation/menuData";
 
 const footer = () => {
+  const Alertmessage = () => {
+    window.alert('coming soon...')
+  }
   return (
     <footer className="bg-gray-500 py-10">
       <div className="container mx-auto lg:max-w-screen-xl xl:max-w-screen-2xl  md:max-w-screen-md px-4">
         <div className="grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
           <div className='col-span-4 md:col-span-12 lg:col-span-4'>
             <Logo />
-            <div className='flex items-center gap-4'>
-              <Link href="https://facebook.com" className='hover:text-amber-500 text-black text-3xl'>
+            {/* <div className='flex items-center gap-4'>
+              <Link href="" className='hover:text-amber-500 text-black text-3xl'>
                 <Icon
-                  icon="tabler:brand-facebook"
+                  icon="tabler:brand-whatsapp"
                 />
               </Link>
               <Link href="https://twitter.com" className='hover:text-amber-500 text-black text-3xl'>
                 <Icon
-                  icon="tabler:brand-twitter"
+                  icon="tabler:brand-telegram"
                 />
               </Link>
               <Link href="https://instagram.com" className='hover:text-amber-500 text-black text-3xl'>
                 <Icon
-                  icon="tabler:brand-instagram"
+                  icon="tabler:brand-email"
                 />
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="col-span-2">
             <h3 className="mb-4 text-2xl font-medium">Links</h3>
@@ -50,22 +53,22 @@ const footer = () => {
                 </Link>
               </li>
               <li className="mb-2 text-black/50 hover:text-amber-500 w-fit">
-                <Link href="#">
+                {/* <Link href="#"> */}
                   Register
-                </Link>
+                {/* </Link> */}
               </li>
               <li className="mb-2 text-black/50 hover:text-amber-500 w-fit">
-                <Link href="#">
+                {/* <Link href="#"> */}
                   Extracuricular
-                </Link>
+                {/* </Link> */}
               </li>
               <li className="mb-2 text-black/50 hover:text-amber-500 w-fit">
-                <Link href="#">
+                {/* <Link href="#"> */}
                   Services
-                </Link>
+                {/* </Link> */}
               </li>
               <li className="mb-2 text-black/50 hover:text-amber-500 w-fit">
-                <Link href="#">
+                <Link href="/contact">
                   Contact
                 </Link>
               </li>
@@ -84,7 +87,7 @@ const footer = () => {
                 icon="tabler:phone"
                 className="text-amber-500 text-3xl inline-block me-2"
               />
-              <h5 className="text-lg text-black/60">+261 38 855 28</h5>
+              <h5 className="text-lg text-black/60">+261 34 38 855 28</h5>
             </div>
             <div className="flex gap-2 mt-10">
               <Icon
@@ -97,10 +100,10 @@ const footer = () => {
         </div>
 
         <div className='mt-10 lg:flex items-center justify-between'>
-          <h4 className='text-black/50 text-sm text-center lg:text-start font-normal'>This website is made by <Link href="https://HolyDev.com" target="_blank" className="hover:text-green-500 text-amber-500"> wwww.HolyDev.com</Link></h4>
+          <h4 className='text-black/50 text-sm text-center lg:text-start font-normal'>This website is made by <p  target="_blank" className="hover:text-green-500 text-amber-500"> wwww.HolyDev.com</p></h4>
           <div className="flex gap-5 mt-5 lg:mt-0 justify-center lg:justify-start">
-            <Link href="/privacy" target="_blank" className='text-black/50 text-sm font-normal hover:text-amber-500'>Privacy policy</Link>
-            <Link href="/termConditions" target="_blank" className='text-black/50 text-sm font-normal hover:text-amber-500'>Terms & conditions</Link>
+            {/* <Link href="/" target="_blank" className='text-black/50 text-sm font-normal hover:text-amber-500'>Privacy policy</Link>
+            <Link href="/termConditions" target="_blank" className='text-black/50 text-sm font-normal hover:text-amber-500'>Terms & conditions</Link> */}
           </div>
         </div>
       </div>

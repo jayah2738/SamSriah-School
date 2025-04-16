@@ -80,7 +80,7 @@ const Header: React.FC = () => {
         delay: 0.2,
         ease:[0.25,0.25,0.25,0.1]
       }}
-      className={`fixed top-0 z-40 w-full pb-3 transition-all duration-300 bg-white ${
+      className={`fixed top-0 z-40 w-full flex justify-center pb-3 transition-all duration-300 bg-white ${
         sticky ? " shadow-lg py-3" : "shadow-none py-3"
       }`}
     >
@@ -93,7 +93,7 @@ const Header: React.FC = () => {
             ))}
           </nav>
           <div className="flex gap-4 ml-4 ">
-            <Link
+            {/* <Link
               href="#"
               className="hidden lg:block bg-rose-400 text-white hover:bg-green-500 px-8 py-3 rounded-full text-lg font-medium"
               onClick={() => {
@@ -101,7 +101,7 @@ const Header: React.FC = () => {
               }}
             >
               SignIn
-            </Link>
+            </Link> */}
             {isSignInOpen && (
               <div className="fixed top-0 left-0 w-full h-full bg-black/90 flex items-center justify-center z-50">
                 <div
@@ -122,7 +122,7 @@ const Header: React.FC = () => {
                 </div>
               </div>
             )}
-            <Link
+            {/* <Link
               href="#"
               className="hidden lg:block bg-pink-600 hover:bg-green-500 text-white px-8 py-3 rounded-full text-lg font-medium"
               onClick={() => {
@@ -130,7 +130,7 @@ const Header: React.FC = () => {
               }}
             >
               SignUp
-            </Link>
+            </Link> */}
             {isSignUpOpen && (
               <div className="fixed top-0 left-0 w-full h-full bg-black/70 flex items-center justify-center z-50">
                 <div
@@ -163,7 +163,7 @@ const Header: React.FC = () => {
           </div>
         </div>
         {navbarOpen && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 z-40" />
+          <div className="fixed top-0 left-0 w-full h-[800px] bg-black bg-opacity-70 z-40" />
         )}
         <div
           ref={mobileMenuRef}
@@ -184,12 +184,12 @@ const Header: React.FC = () => {
               aria-label="Close menu Modal"
             ></button>
           </div>
-          <nav className="flex flex-col items-start p-4 text-gray-500">
+          <nav className="flex flex-col items-start p-4 text-gray-500 bg-white">
             {headerData.map((item, index) => (
               <MobileHeaderLink key={index} item={item} />
             ))}
             <div className="mt-4 flex text-white flex-col space-y-4 w-full">
-              <Link
+              {/* <Link
                 href="#"
                 className="bg-pink-700  py-2 rounded-full text-center hover:bg-green-500"
                 onClick={() => {
@@ -208,7 +208,7 @@ const Header: React.FC = () => {
                 }}
               >
                 Sign Up
-              </Link>
+              </Link> */}
             </div>
           </nav>
         </div>

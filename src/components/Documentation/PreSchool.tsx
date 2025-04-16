@@ -5,14 +5,13 @@ import kindergarten from "/public/images/documentation/Kindergarten.png";
 import primaryschool from "/public/images/documentation/PrimarySchool.png";
 import middleschool from "/public/images/documentation/MiddleSchool.png";
 import highschool from "/public/images/documentation/HighSchool.png";
-// import axiosImg from "/public/images/documentation/axios.svg";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useState } from "react";
 import { DocNavigation } from "./DocNavigation";
 
 export const Introduction = () => {
   const [docNavbarOpen, setDocNavbarOpen] = useState(false);
-  const PackageVersions = [
+  const SectionsImages = [
     {
       id: "1",
       packageName: "Eng-Fr",
@@ -55,18 +54,18 @@ export const Introduction = () => {
         )}
 
         <div className="flex item-center justify-between">
-          <h3 className=" text-2xl mt-16 lg:mt-4 font-semibold mb-6 text-green-700">
+          <h3 className=" text-2xl mt-20 items-center text-center lg:mt-4 font-semibold mb-6 text-green-700">
           Introduction | PreSchool
           </h3>
           <button onClick={() => setDocNavbarOpen(true)} className="p-0">
             {" "}
-            <Icon icon="gg:menu-right" className="text-3xl lg:hidden block" />
+            {/* <Icon  icon="gg:menu-right" className="text-3xl mt-16 lg:hidden block" /> */}
           </button>
         </div>
 
         <div className="w-full grid grid-cols-2 lg:flex justify-between lg:gap-0 gap-6 lg:flex-nowrap flex-wrap p-2 rounded-md border border-dark_border border-opacity-60">
-          {PackageVersions &&
-            PackageVersions.map((item) => {
+          {SectionsImages &&
+            SectionsImages.map((item) => {
               return (
                 <div
                   key={item.id}

@@ -40,7 +40,7 @@ const Mentor = () => {
   };
 
   return (
-    <section className="bg-rose-300" id="mentor">
+    <section className="bg-rose-300 w-full" id="mentor">
       <div className="container mx-auto lg:max-w-screen-xl xl:max-w-screen-2xl  md:max-w-screen-md px-4 relative">
         <motion.h2
           variants={fadeIn("right", 0.7)}
@@ -70,12 +70,12 @@ const Mentor = () => {
                     height={0}
                     className="inline-block m-auto"
                   />
-                  <div className="absolute right-[84px] bottom-[102px] bg-white rounded-full p-3">
+                  <div className="absolute translate-x-[18rem] bottom-[102px] bg-white rounded-full  py-3 px-1 ">
                     <Image
-                      src={"/images/mentor/pdplogo.png"}
+                      src={"/images/mentor/logo1.png"}
                       alt="linkedin-image"
-                      width={55}
-                      height={60}
+                      width={50}
+                      height={80}
                     />
                   </div>
                 </div>

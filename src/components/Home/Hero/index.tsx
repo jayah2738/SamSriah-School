@@ -9,33 +9,39 @@ const Hero = () => {
     <section id="home-section" className="bg-white">
       <div className="container mx-auto lg:pt-20 lg:max-w-screen-xl xl:max-w-screen-2xl md:max-w-screen-md">
         <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
-          <div className="col-span-6 flex flex-col gap-8 ">
+          <div className="col-span-6 flex flex-col gap-8 px-4 ">
             <div className="flex gap-2 mx-auto lg:mx-0"></div>
             <motion.h1
               variants={fadeIn("right", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-gray-700 text-4xl sm:text-7xl font-bold pt-5 lg:pt-0"
+              className="text-gray-700 text-4xl sm:text-7xl font-bold pt-12 xl:pt-8"
             >
-              <span className="text-amber-500"> From </span>KINDERGARTEN{" "}
-              <span className="text-amber-500"> to </span>12TH GRADE
+              <span className="text-amber-500"> From </span>NURSERY{" "}
+              <br/><span className="text-amber-500"> to </span>12TH GRADE
             </motion.h1>
             <motion.h3
               variants={fadeIn("right", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-black/70 text-lg pt-5 lg:pt-0"
+              className="text-black/70 text-lg  lg:pt-0"
+              
             >
+              Welcome to <span className="text-amber-500 font-bold"> SAMSRIAH SCHOOL </span><br/> Where Learning Inspires the Future.
+              Discover a place where academic excellence meets creativity, character, and community. At <span className="text-amber-500 font-bold"> SAMSRIAH SCHOOL </span>, we nurture curious minds, foster lifelong learning, and empower students to become tomorrow’s leaders.
+              <br/>
+              <br/>
+    
               <Icon
                 icon="solar:verified-check-bold"
                 className="text-success text-4xl inline-block me-2"
               />{" "}
               Entrust us with the Education of your child, his future will be
-              ensure.
+              ensured.
             </motion.h3>
-            <motion.div
+            {/* <motion.div
               variants={fadeIn("right", 0.5)}
               initial="hidden"
               whileInView={"show"}
@@ -55,8 +61,8 @@ const Hero = () => {
                   className="absolute top-3 right-3 p-5text-white text-2xl inline-block"
                 />
               </button>
-            </motion.div>
-            <div className="flex items-center justify-between pt-10 lg:pt-4">
+            </motion.div> */}
+            <div className="flex items-center justify-between lg:pt-4">
               <motion.div
                 variants={fadeIn("up", 0.6)}
                 initial="hidden"
