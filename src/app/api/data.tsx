@@ -62,48 +62,48 @@ export const courseData: {
 export const MentorData: { profession: string; name: string; imgSrc: string }[] = [
   {
     profession: 'English Teacher',
-    name: 'Mr.Andry',
-    imgSrc: '/images/mentor/user3.png',
-  },
-  {
-    profession: 'French Teacher',
-    name: 'Mr.Aina',
-    imgSrc: '/images/mentor/user2.png',
-  },
-  {
-    profession: 'Mathematics Teacher',
-    name: 'Mr.Tojo',
-    imgSrc: '/images/mentor/user1.png',
-  },
-  {
-    profession: 'Informatics Teacher',
-    name: 'Mr.Mika',
-    imgSrc: '/images/mentor/user3.png',
+    name: 'Mr.Haja',
+    imgSrc: '/images/mentor/haja.jpg',
   },
   {
     profession: 'Physics Teacher',
     name: 'Mr.Manou',
-    imgSrc: '/images/mentor/user1.png',
+    imgSrc: '/images/mentor/manou.jpg',
   },
   {
-    profession: 'History and Geography',
-    name: 'Mr.Christian',
-    imgSrc: '/images/mentor/user1.png',
-  },
-  {
-    profession: "Science's Teacher",
+    profession: 'Science Teacher',
     name: 'Mr.Tojo',
-    imgSrc: '/images/mentor/user3.png',
+    imgSrc: '/images/mentor/tojosvt.jpg',
   },
   {
-    profession: 'Physics Teacher',
-    name: 'Mr.Gilbert',
-    imgSrc: '/images/mentor/user1.png',
+    profession: 'Mathematics Teacher',
+    name: 'Mr.Vonjy',
+    imgSrc: '/images/mentor/vonjy.jpg',
   },
   {
-    profession: "Sports' Teacher",
-    name: 'Mr.Juvenal',
-    imgSrc: '/images/mentor/user1.png',
+    profession: 'Malagasy Teacher',
+    name: 'Ms.Finaritra',
+    imgSrc: '/images/mentor/finaritra.jpg',
+  },
+  {
+    profession: 'S.E.S teacher',
+    name: 'Mrs.Lova',
+    imgSrc: '/images/mentor/lovabe.jpg',
+  },
+  {
+    profession: 'Primary Teacher',
+    name: 'Ms.Lucy',
+    imgSrc: '/images/mentor/lucy.jpg',
+  },
+  {
+    profession: "GS Teacher",
+    name: 'Mrs.Perline',
+    imgSrc: '/images/mentor/mamie.jpg',
+  },
+  {
+    profession: "TPS Teacher",
+    name: 'Ms.Ravaka',
+    imgSrc: '/images/mentor/ravaka.jpg',
   },
 ]
 

@@ -12,7 +12,7 @@ const Mentor = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
@@ -66,11 +66,11 @@ const Mentor = () => {
                   <Image
                     src={items.imgSrc}
                     alt="user-image"
-                    width={306}
-                    height={0}
-                    className="inline-block m-auto"
+                    width={200}
+                    height={120}
+                    className="inline-block m-auto rounded-full h-[200px] shadow-white/50 shadow-lg "
                   />
-                  <div className="absolute translate-x-[18rem] bottom-[102px] bg-white rounded-full  py-3 px-1 ">
+                  <div className="absolute translate-x-[14rem] bottom-[20px] bg-white rounded-full  py-3 px-1 ">
                     <Image
                       src={"/images/mentor/logo1.png"}
                       alt="linkedin-image"
@@ -79,11 +79,11 @@ const Mentor = () => {
                     />
                   </div>
                 </div>
-                <div className="-mt-10">
+                <div className="mt-4">
                   <h3 className="text-2xl font-semibold text-lightblack">
                     {items.name}
                   </h3>
-                  <h4 className="text-lg font-normal text-lightblack pt-2 opacity-50">
+                  <h4 className="text-lg font-normal text-gray-500 pt-2 ">
                     {items.profession}
                   </h4>
                 </div>

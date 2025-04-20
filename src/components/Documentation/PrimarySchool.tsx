@@ -19,12 +19,15 @@ export const PackageStructure = () => {
         </div>
         <span className='text-amber-500 font-bold' >
         🧒 Primary School (Grades 1–5)
-        </span>
-        
+        <span className="text-gray-500 font-normal">
         Our Primary School provides a nurturing and joyful environment where children build 
         strong academic foundations and a lifelong love for learning. With caring teachers 
         and interactive lessons, we focus on core skills like reading, writing, math, and social
          development. Through play, creativity, and exploration, students grow in confidence and curiosity every day.
+        </span>
+        </span>
+        
+       
       </div>
         
     </div>

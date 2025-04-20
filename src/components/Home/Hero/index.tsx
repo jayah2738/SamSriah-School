@@ -29,7 +29,7 @@ const Hero = () => {
               className="text-black/70 text-lg  lg:pt-0"
               
             >
-              Welcome to <span className="text-amber-500 font-bold"> SAMSRIAH SCHOOL </span><br/> Where Learning Inspires the Future.
+              Welcome to <span className="text-amber-500 font-bold"> SAMSRIAH SCHOOL, </span><br/> where Learning Inspires the Future.
               Discover a place where academic excellence meets creativity, character, and community. At <span className="text-amber-500 font-bold"> SAMSRIAH SCHOOL </span>, we nurture curious minds, foster lifelong learning, and empower students to become tomorrow’s leaders.
               <br/>
               <br/>
