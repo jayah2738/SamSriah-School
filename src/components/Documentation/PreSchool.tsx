@@ -17,35 +17,41 @@ export const Introduction = () => {
       packageName: "Eng-Fr",
       img: preschool,
       version: "PreSchool",
+      description: "Foundational learning for young minds"
     },
     {
       id: "2",
       packageName: "Eng-Fr",
       img: kindergarten,
       version: "Kindergarten",
+      description: "Play-based learning environment"
     },
     {
       id: "3",
       packageName: "Eng-Fr",
       img: primaryschool,
-      version: "Primary ",
+      version: "Primary",
+      description: "Building strong academic foundations"
     },
     {
       id: "4",
       packageName: "Eng-Fr",
       img: middleschool,
-      version: "Middle ",
+      version: "Middle",
+      description: "Developing critical thinking skills"
     },
     {
       id: "5",
       packageName: "Eng-Fr",
       img: highschool,
-      version: "High ",
+      version: "High",
+      description: "Preparing for future success"
     },
   ];
+
   return (
     <>
-      <div id="version" className="md:scroll-m-[180px] scroll-m-28">
+      <div id="version" className="md:scroll-m-[100px] scroll-m-18">
         {docNavbarOpen && (
           <div
             className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40"
@@ -53,91 +59,89 @@ export const Introduction = () => {
           />
         )}
 
-        <div className="flex item-center justify-between">
-          <h3 className=" text-2xl mt-20 items-center text-center lg:mt-4 font-semibold mb-6 text-green-700">
-          Introduction | PreSchool
-          </h3>
-          <button onClick={() => setDocNavbarOpen(true)} className="p-0">
-            {" "}
-            {/* <Icon  icon="gg:menu-right" className="text-3xl mt-16 lg:hidden block" /> */}
+        <div className="flex items-center justify-between mb-8">
+          <div>
+            <h3 className="text-3xl font-bold text-gray-900 mb-2">
+              Introduction | PreSchool
+            </h3>
+            <p className="text-gray-600">Discover our comprehensive early education program</p>
+          </div>
+          <button 
+            onClick={() => setDocNavbarOpen(true)} 
+            className="lg:hidden block p-2 rounded-lg hover:bg-amber-50 transition-colors duration-300"
+          >
+            <Icon icon="gg:menu-right" className="text-3xl text-gray-600" />
           </button>
         </div>
 
-        <div className="w-full grid grid-cols-2 lg:flex justify-between lg:gap-0 gap-6 lg:flex-nowrap flex-wrap p-2 rounded-md border border-dark_border border-opacity-60">
-          {SectionsImages &&
-            SectionsImages.map((item) => {
-              return (
-                <div
-                  key={item.id}
-                  className="lg:w-1/5 md:w-full text-center lg:border-b-0 border-b lg:border-e lg:last:border-e-0 last:border-b-0 border-dark_border border-opacity-70"
-                >
-                  <Image
-                    src={item.img}
-                    alt="npm-package"
-                    className=" mx-auto w-40 h-36 border rounded-lg "
-                  />
-                  <h5 className="text-2xl font-bold mt-3.5 text-black-500">{`${item.version}`}</h5>
-                  <p className="text-rose-500 font-medium text-muted">
-                    {item.packageName}
-                  </p>
-                </div>
-              );
-            })}
-        </div>
-        <div className="mt-5">
-          <p className="text-base font-medium text-muted text-opacity-60">
-            <span className="text-amber-500 font-bold">SAMSRIAH SCHOOL</span> is an English and French expressions school.
-          </p>
-          <p className="text-base font-medium text-black text-opacity-60">
-            It has been established for 10 years. So, our Teachers are dedicated.
-          </p>
-          <p className="text-base font-medium text-black text-opacity-60">
-            This school follows Malagasy Ministry's Programs. But the communication's languages are English and French.
-          </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          {SectionsImages.map((item) => (
+            <div
+              key={item.id}
+              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
+            >
+              <div className="relative h-48">
+                <Image
+                  src={item.img}
+                  alt={item.version}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-4">
+                <h5 className="text-xl font-bold text-gray-900 mb-1">{item.version}</h5>
+                <p className="text-amber-500 font-medium mb-2">{item.packageName}</p>
+                <p className="text-sm text-gray-600">{item.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
 
-        <div className="mt-5">
-          <p className="text-base font-medium text-black text-opacity-60">
-            <span className="text-amber-500 font-bold">PreSchool</span> has four grades: <span className="text-red-500 font-bold">TPS</span> - <span className="text-red-500 font-bold">PS</span> - <span className="text-red-500 font-bold">MS</span> - <span className="text-red-500 font-bold">GS</span>
-          </p>
-          <p className="text-base font-medium text-black text-opacity-60">
-            For each of those grades, kids have their own skills. The more they upgrade, the more skill they have
-          </p>
+        <div className="mt-12 space-y-6">
+          <div className="bg-white rounded-2xl shadow-lg p-6">
+            <h4 className="text-xl font-semibold text-gray-900 mb-4">About Our School</h4>
+            <p className="text-gray-600 mb-4">
+              <span className="text-amber-500 font-bold">SAMSRIAH SCHOOL</span> is an English and French expressions school with a decade of excellence in education.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Our dedicated teachers follow the Malagasy Ministry's Programs while maintaining English and French as the primary languages of communication.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-lg p-6">
+            <h4 className="text-xl font-semibold text-gray-900 mb-4">PreSchool Program</h4>
+            <p className="text-gray-600 mb-4">
+              Our <span className="text-amber-500 font-bold">PreSchool</span> program includes four grades:
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {["TPS", "PS", "MS", "GS"].map((grade) => (
+                <div key={grade} className="bg-amber-50 rounded-lg p-3 text-center">
+                  <span className="text-amber-600 font-bold">{grade}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-gray-600 mt-4">
+              Each grade level is designed to progressively develop essential skills, ensuring a strong foundation for future learning.
+            </p>
+          </div>
         </div>
       </div>
 
       <div
-        className={`lg:hidden block fixed top-0 right-0 h-full w-full bg-white dark:bg-dark shadow-lg transform transition-transform duration-300 max-w-xs ${docNavbarOpen ? "translate-x-0" : "translate-x-full"
-          } z-50`}
+        className={`lg:hidden block fixed top-0 right-0 h-full w-full bg-white shadow-lg transform transition-transform duration-300 max-w-xs ${
+          docNavbarOpen ? "translate-x-0" : "translate-x-full"
+        } z-50`}
       >
-        <div className="flex items-center justify-between p-4">
-          <h2 className="text-lg font-bold text-midnight_text dark:text-black">
-            Docs Menu
-          </h2>
+        <div className="flex items-center justify-between p-4 border-b border-gray-100">
+          <h2 className="text-lg font-bold text-gray-900">School Programs</h2>
           <button
             onClick={() => setDocNavbarOpen(false)}
-            aria-label="Close mobile menu"
+            className="p-2 rounded-lg hover:bg-amber-50 transition-colors duration-300"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              className="dark:text-black"
-            >
-              <path
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+            <Icon icon="mdi:close" className="text-2xl text-gray-600" />
           </button>
         </div>
-
-        <nav className="px-4">
+        <nav className="p-4">
           <DocNavigation />
         </nav>
       </div>

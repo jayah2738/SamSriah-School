@@ -11,7 +11,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/components/variants";
 
 const Courses = () => {
-
     const settings = {
         dots: false,
         infinite: true,
@@ -19,8 +18,8 @@ const Courses = () => {
         slidesToScroll: 1,
         arrows: true,
         autoplay: true,
-        speed: 3000,
-        cssEase: "linear",
+        speed: 2000,
+        cssEase: "ease-in-out",
         responsive: [
             {
                 breakpoint: 1200,
@@ -49,55 +48,101 @@ const Courses = () => {
         const emptyStars = 5 - fullStars - halfStars;
 
         return (
-            <>
+            <div className="flex gap-1">
                 {Array(fullStars).fill(<Icon icon="tabler:star-filled" className="text-yellow-500 text-xl inline-block" />)}
                 {halfStars > 0 && <Icon icon="tabler:star-half-filled" className="text-yellow-500 text-xl inline-block" />}
-                {Array(emptyStars).fill(<Icon icon="tabler:star-filled" className="text-gray-400 text-xl inline-block" />)}
-            </>
+                {Array(emptyStars).fill(<Icon icon="tabler:star-filled" className="text-gray-300 text-xl inline-block" />)}
+            </div>
         );
     };
 
     return (
-        <section id="courses" className="bg-white">
-            <div className='container mx-auto lg:max-w-screen-xl xl:max-w-screen-2xl  md:max-w-screen-md px-4'>
-                <div className="sm:flex justify-between items-center ">
+        <section id="courses" className="bg-gradient-to-b from-white to-gray-50 py-20">
+            <div className='container mx-auto lg:max-w-screen-xl xl:max-w-screen-2xl md:max-w-screen-md px-4'>
+                <div className="flex flex-col sm:flex-row justify-between items-center mb-12">
                     <motion.h2
-                     variants={fadeIn("right", 0.7)}
-                     initial="hidden"
-                     whileInView={"show"}
-                     viewport={{ once: false, amount: 0.7 }}
-                    className="text-midnight_text text-4xl lg:text-5xl font-semibold sm:mb-0">Our Sections.</motion.h2>
-                    <button onClick={()=>{window.alert('Coming soon...')}} className="text-primary text-lg font-medium hover:tracking-widest duration-500">Explore more&nbsp;&gt;&nbsp;</button>
-                </div>
-                <Slider {...settings}>
-                    {courseData.map((items, i) => (
-                        <motion.div 
-                        variants={fadeIn("down", 0.3)}
+                        variants={fadeIn("right", 0.7)}
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{ once: false, amount: 0.7 }}
-                        
-                        key={i}>
-                            <div className='bg-white m-3 mb-12 px-3 pt-3 pb-12 shadow-course-shadow rounded-2xl h-full'>
-                                <div className="relative rounded-3xl">
-                                    <Image src={items.imgSrc} alt="course-image" width={389} height={262} className="m-auto clipPath" />
-                                    <div className="absolute right-5 -bottom-2 bg-rose-500 rounded-full p-4 shadow-lg">
-                                        <h3 className="text-white uppercase text-center text-sm font-medium">The best <br /> Way</h3>
+                        className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent mb-4 sm:mb-0"
+                    >
+                        Our Sections
+                    </motion.h2>
+                    <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={() => window.alert('Coming soon...')}
+                        className="flex items-center gap-2 text-primary text-lg font-semibold hover:text-amber-600 transition-colors duration-300"
+                    >
+                        Explore more
+                        <Icon icon="tabler:arrow-right" className="text-xl" />
+                    </motion.button>
+                </div>
+
+                <Slider {...settings}>
+                    {courseData.map((items, i) => (
+                        <motion.div
+                            key={i}
+                            variants={fadeIn("up", 0.3)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{ once: false, amount: 0.7 }}
+                            className="px-3"
+                        >
+                            <div className='group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2'>
+                                <div className="relative overflow-hidden">
+                                    <div className="aspect-w-16 aspect-h-9">
+                                        <Image
+                                            src={items.imgSrc}
+                                            alt={`${items.heading} course`}
+                                            width={389}
+                                            height={262}
+                                            className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    </div>
+                                    <div className="absolute right-5 -bottom-4 bg-gradient-to-r from-amber-500 to-amber-600 rounded-full p-4 shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                                        <h3 className="text-white uppercase text-center text-sm font-semibold">The best <br /> Way</h3>
                                     </div>
                                 </div>
 
-                                <div className="px-3 pt-6">
-                                    <Link href="#" className='text-2xl font-bold text-black max-w-75% inline-block'>{items.heading}</Link>
-                                    {/* <h3 className='text-base font-normal pt-6 text-black/75'>{items.name}</h3> */}
-                                    <div className="flex flex-col justify-between items-center py-6 border-b">
-                                        <div className="flex items-center gap-6">
-                                            <div className="flex">
-                                                {renderStars(items.rating)} {/* Dynamic stars */}
+                                <div className="p-6">
+                                    <Link href="#" className='block'>
+                                        <h3 className='text-2xl font-bold text-gray-900 hover:text-amber-600 transition-colors duration-300 mb-4'>{items.heading}</h3>
+                                    </Link>
+                                    
+                                    <div className="space-y-4 py-4 border-t border-gray-100">
+                                        <div className="flex items-center justify-between">
+                                            <div className="flex items-center gap-2">
+                                                {renderStars(items.rating)}
+                                                <span className="text-gray-600 font-medium">{items.rating}</span>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <Icon icon="tabler:users" className="text-gray-600 text-xl" />
+                                                <span className="text-gray-600 font-medium">{items.students} Students</span>
                                             </div>
                                         </div>
-                                        <h3 className="text-xl font-medium text-red-500"><span className='text-gray-500' >Max Students: </span>20/Grade</h3>
+                                        
+                                        <div className="flex items-center justify-between">
+                                            <div className="flex items-center gap-2">
+                                                <Icon icon="tabler:book" className="text-gray-600 text-xl" />
+                                                <span className="text-gray-600 font-medium">{items.classes} Classes</span>
+                                            </div>
+                                            <div className="text-amber-600 font-bold text-lg">
+                                                ${items.price}/mo
+                                            </div>
+                                        </div>
                                     </div>
-                                   
+
+                                    <Link href="/documentation">
+                                        <motion.button
+                                            whileHover={{ scale: 1.02 }}
+                                            whileTap={{ scale: 0.98 }}
+                                            className="w-full mt-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white py-3 rounded-lg font-semibold hover:from-amber-600 hover:to-amber-700 transition-all duration-300"
+                                        >
+                                            Learn More
+                                        </motion.button>
+                                    </Link>
                                 </div>
                             </div>
                         </motion.div>

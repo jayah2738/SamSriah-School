@@ -61,6 +61,7 @@ const Contact = () => {
 
   return (
     <motion.section
+      id="contact-form"
       variants={fadeIn("left", 0.2)}
       initial="hidden"
       whileInView={"show"}
@@ -250,4 +251,5 @@ const Contact = () => {
     </motion.section>
   );
 };
+
 export default Contact;
