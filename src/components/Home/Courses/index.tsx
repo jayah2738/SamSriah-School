@@ -18,7 +18,7 @@ const Courses = () => {
         slidesToScroll: 1,
         arrows: true,
         autoplay: true,
-        speed: 2000,
+        speed: 5000,
         cssEase: "ease-in-out",
         responsive: [
             {
@@ -73,7 +73,7 @@ const Courses = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={() => window.alert('Coming soon...')}
-                        className="flex items-center gap-2 text-primary text-lg font-semibold hover:text-amber-600 transition-colors duration-300"
+                        className="flex items-center gap-2 text-green-500 text-lg font-semibold hover:text-amber-600 transition-colors duration-300"
                     >
                         Explore more
                         <Icon icon="tabler:arrow-right" className="text-xl" />
@@ -81,7 +81,7 @@ const Courses = () => {
                 </div>
 
                 <Slider {...settings}>
-                    {courseData.map((items, i) => (
+                    {courseData.map((items:any, i:any) => (
                         <motion.div
                             key={i}
                             variants={fadeIn("up", 0.3)}
@@ -92,13 +92,13 @@ const Courses = () => {
                         >
                             <div className='group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2'>
                                 <div className="relative overflow-hidden">
-                                    <div className="aspect-w-16 aspect-h-9">
+                                    <div className="aspect-w-16 aspect-h-9 rounded-t-r-2xl rounded-b-l-2xl">
                                         <Image
                                             src={items.imgSrc}
                                             alt={`${items.heading} course`}
                                             width={389}
                                             height={262}
-                                            className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
+                                            className="object-cover w-full h-80 transform group-hover:scale-110 transition-transform duration-500"
                                         />
                                     </div>
                                     <div className="absolute right-5 -bottom-4 bg-gradient-to-r from-amber-500 to-amber-600 rounded-full p-4 shadow-lg transform group-hover:scale-110 transition-transform duration-300">
@@ -119,17 +119,17 @@ const Courses = () => {
                                             </div>
                                             <div className="flex items-center gap-2">
                                                 <Icon icon="tabler:users" className="text-gray-600 text-xl" />
-                                                <span className="text-gray-600 font-medium">{items.students} Students</span>
+                                                <span className="text-gray-600 font-medium">{items.students} Students/Grade</span>
                                             </div>
                                         </div>
                                         
                                         <div className="flex items-center justify-between">
                                             <div className="flex items-center gap-2">
                                                 <Icon icon="tabler:book" className="text-gray-600 text-xl" />
-                                                <span className="text-gray-600 font-medium">{items.classes} Classes</span>
+                                                <span className="text-gray-600 font-medium">{items.classes} Grades</span>
                                             </div>
                                             <div className="text-amber-600 font-bold text-lg">
-                                                ${items.price}/mo
+                                                MGA{items.price}/mo
                                             </div>
                                         </div>
                                     </div>

@@ -6,104 +6,149 @@ export const courseData: {
   name: string;
   students: number;
   classes: number;
-  price: number;
+  price: string;
   rating: number;
 }[] = [
   {
     heading: 'Nursery',
-    imgSrc: '/images/courses/Preschoolok.png',
-    students: 150,
-    classes: 12,
-    price: 50,
-    rating: 4,
+    imgSrc: '/images/documentation/nursery.jpg',
+    students: 10,
+    classes: 1,
+    price: '200.000',
+    rating: 4.5,
+    name: ""
   },
     {
       heading: 'PreSchool',
-      imgSrc: '/images/courses/Preschoolok.png',
-      students: 150,
-      classes: 12,
-      price: 50,
+      imgSrc: '/images/courses/preschool.png',
+      students: 20,
+      classes: 4,
+      price: '100.000',
       rating: 5,
+      name: ""
     },
     {
       heading: 'Primary School',
-      imgSrc: '/images/courses/Preschoolok.png',
-      students: 130,
-      classes: 12,
-      price: 40,
+      imgSrc: '/images/courses/primary.png',
+      students: 20,
+      classes: 5,
+      price: '100.000',
       rating: 5,
+      name:""
     },
     {
       heading: 'Middle School',
-      imgSrc: '/images/courses/Preschoolok.png',
-      students: 120,
-      classes: 12,
-      price: 40,
+      imgSrc: '/images/courses/middle.png',
+      students: 20,
+      classes: 4,
+      price: '100.000',
       rating: 5,
+      name:""
+
     },
     {
       heading: 'High School',
-      imgSrc: '/images/courses/Preschoolok.png',
-      students: 150,
-      classes: 12,
-      price: 50,
+      imgSrc: '/images/courses/high.png',
+      students: 20,
+      classes: 7,
+      price: '100.000',
       rating: 5,
-    },
-    {
-      heading: 'Kindergarten',
-      imgSrc: '/images/courses/Preschoolok.png',
-      students: 150,
-      classes: 12,
-      price: 20,
-      rating: 5,
-    },
+      name:""
+
+    }
   ]
 
-export const MentorData: { profession: string; name: string; imgSrc: string }[] = [
+export const MentorData: { profession: string; name: string; imgSrc: string; description:string; StudentsNum:number  }[] = [
   {
     profession: 'English Teacher',
     name: 'Mr.Haja',
     imgSrc: '/images/mentor/haja.jpg',
+    StudentsNum:60,
+    description:"I am an enthusiastic English teacher who specializes in helping students build strong reading, writing, and communication skills. With a focus on creativity and critical thinking.",
   },
   {
     profession: 'Physics Teacher',
     name: 'Mr.Manou',
     imgSrc: '/images/mentor/manou.jpg',
+    StudentsNum:100,
+    description:"I am a passionate Physics teacher who helps students explore the laws of nature through hands-on experiments and problem-solving, encouraging logical thinking and curiosity.",
+  },
+  {
+    profession: 'Informatics Teacher',
+    name: 'Mr.Mika',
+    imgSrc: '/images/mentor/mika.jpg',
+    StudentsNum:20,
+    description:"I am a dedicated Informatics teacher who introduces students to the world of coding, digital tools, and problem-solving, fostering creativity and technical skills.",
   },
   {
     profession: 'Science Teacher',
     name: 'Mr.Tojo',
     imgSrc: '/images/mentor/tojosvt.jpg',
+    StudentsNum:80,
+    description:"I am an enthusiastic Science teacher who inspires students to discover the natural world through inquiry-based learning and scientific exploration.",
   },
   {
-    profession: 'Mathematics Teacher',
-    name: 'Mr.Vonjy',
-    imgSrc: '/images/mentor/vonjy.jpg',
+    profession: 'H&G Teacher',
+    name: 'Mr.Christian',
+    imgSrc: '/images/mentor/mr.christian.jpg',
+    StudentsNum:100,
+    description:"I am a committed History & Geography teacher who brings the past to life, helping students develop critical thinking by understanding historical events and their impact.",
   },
   {
     profession: 'Malagasy Teacher',
     name: 'Ms.Finaritra',
     imgSrc: '/images/mentor/finaritra.jpg',
+    StudentsNum:100,
+    description:"I am a proud Malagasy teacher who helps students strengthen their language skills while appreciating the richness of our culture and traditions.",
   },
   {
-    profession: 'S.E.S teacher',
+    profession: 'S.E.S/ENG teacher',
     name: 'Mrs.Lova',
     imgSrc: '/images/mentor/lovabe.jpg',
+    StudentsNum:100,
+    description:" am an engaged SES teacher who supports students in understanding social structures, economic systems, and their role as active citizens.",
+  },{
+    profession: 'Philosophy teacher',
+    name: 'Mrs.Maria',
+    imgSrc: '/images/mentor/maria.jpg',
+    StudentsNum:100,
+    description:"I am a passionate philosophy teacher who helps students explore big questions, think critically, and understand different perspectives on life, ethics, and knowledge.",
   },
   {
-    profession: 'Primary Teacher',
+    profession: 'Grade 4 Teacher',
     name: 'Ms.Lucy',
     imgSrc: '/images/mentor/lucy.jpg',
+    StudentsNum:20,
+    description:"I am a caring Grade 4 teacher who supports students in building strong foundations in literacy, numeracy, and social skills through engaging and inclusive learning.",
+  },
+  ,
+  {
+    profession: 'PS Teacher',
+    name: 'Mrs.Lanto',
+    imgSrc: '/images/mentor/mme.lanto.jpg',
+    StudentsNum:20,
+    description:"I am a nurturing TPS teacher who helps young children take their first steps in learning through play, exploration, and gentle guidance.",
+  },
+  {
+    profession: 'MS Teacher',
+    name: 'Mrs.Stephanie',
+    imgSrc: '/images/mentor/mme.stephanie.jpg',
+    StudentsNum:20,
+    description:"I am a supportive PS teacher who encourages curiosity and confidence as young learners begin their educational journey through games and discovery.",
   },
   {
     profession: "GS Teacher",
     name: 'Mrs.Perline',
     imgSrc: '/images/mentor/mamie.jpg',
+    StudentsNum:20,
+    description:"I am a joyful MS teacher who helps children develop language, motor, and social skills through creative, age-appropriate activities.",
   },
   {
     profession: "TPS Teacher",
     name: 'Ms.Ravaka',
     imgSrc: '/images/mentor/ravaka.jpg',
+    StudentsNum:20,
+    description:"I am a committed GS teacher who prepares children for primary school by building early literacy, numeracy, and independence in a fun, caring environment.",
   },
 ]
 
@@ -179,3 +224,4 @@ export const TestimonialData: { profession: string; comment: string; imgSrc: str
     rating: 5
   },
 ]
+

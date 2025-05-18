@@ -58,7 +58,7 @@ export const QuickStart = () => {
           Middle School Program
         </h3>
         <p className="text-gray-600">
-          Preparing students for academic success and personal growth
+          Preparing students for academic success and personal growth {""}  from <span className="font-bold text-amber-500">grade 6 </span> to <span className="font-bold text-amber-500">grade 9 </span>
         </p>
       </div>
 

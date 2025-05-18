@@ -15,8 +15,8 @@ export const HighSchool = () => {
     },
     {
       icon: "solar:globe-bold",
-      title: "International Baccalaureate",
-      description: "Global perspective and international education standards"
+      title: " Baccalaureate",
+      description: "Global perspective and The best education standards"
     },
     {
       icon: "solar:pen-bold",
@@ -58,7 +58,7 @@ export const HighSchool = () => {
           High School Program
         </h3>
         <p className="text-gray-600">
-          Preparing students for university success and future careers
+          Preparing students for university success and future careers {""} from <span className="font-bold text-amber-500">grade 10 </span> to <span className="font-bold text-amber-500">grade 12 </span>
         </p>
       </div>
 

@@ -17,15 +17,15 @@ const menuItems: MenuItem[] = [
     name: "Healthy Breakfast Set",
     description: "Fresh fruits, yogurt, and whole grain bread",
     price: "7,000 Ar",
-    image: "/images/canteen/canteen-03.jpg",
+    image: "/images/canteen/healthybreakfast.jpg",
     category: "breakfast"
   },
   {
     id: 2,
     name: "Traditional Lunch",
     description: "Rice with vegetables and choice of protein",
-    price: "7,000 Ar",
-    image: "/images/canteen/thai-style-daily-food.jpg",
+    price: "10,000 Ar",
+    image: "/images/canteen/traditionalunch.jpg",
     category: "lunch"
   },
   {
@@ -33,7 +33,7 @@ const menuItems: MenuItem[] = [
     name: "Afternoon Snack",
     description: "Fresh juice and homemade cookies",
     price: "7,000 Ar",
-    image: "/images/canteen/amma-s-canteen.jpg",
+    image: "/images/canteen/afternoonsnack.jpg",
     category: "snacks"
   }
 ];

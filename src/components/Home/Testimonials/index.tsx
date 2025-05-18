@@ -11,7 +11,7 @@ import { fadeIn } from "@/components/variants";
 
 const Testimonial = () => {
   const settings = {
-    dots: true,
+    dots: false,
     dotsClass: "slick-dots",
     infinite: true,
     slidesToShow: 3,
@@ -27,7 +27,7 @@ const Testimonial = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -36,7 +36,7 @@ const Testimonial = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
     ],
@@ -108,16 +108,7 @@ const Testimonial = () => {
               <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                 <div className="p-8">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="relative w-16 h-16 rounded-full overflow-hidden">
-                      <Image
-                        src={items.imgSrc}
-                        alt={items.name}
-                        width={64}
-                        height={64}
-                        className="object-cover w-full h-full"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    </div>
+                   
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 group-hover:text-amber-600 transition-colors duration-300">
                         {items.name}
@@ -141,22 +132,11 @@ const Testimonial = () => {
                     </div>
                     <div className="flex items-center gap-2 text-gray-600">
                       <Icon icon="mdi:school" className="text-amber-500" />
-                      <span className="text-sm">{items.class}</span>
                     </div>
                   </div>
                 </div>
 
-                <div className="px-8 py-4 bg-gray-50 border-t border-gray-100">
-                  <div className="flex items-center gap-4">
-                    <div className="flex-1 h-1 bg-gray-200 rounded-full">
-                      <div 
-                        className="h-full bg-amber-500 rounded-full transition-all duration-500"
-                        style={{ width: `${(items.rating / 5) * 100}%` }}
-                      />
-                    </div>
-                    <span className="text-amber-600 font-semibold">{items.rating}/5</span>
-                  </div>
-                </div>
+                
               </div>
             </motion.div>
           ))}

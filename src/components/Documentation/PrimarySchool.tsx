@@ -55,12 +55,13 @@ export const PackageStructure = () => {
       id="structure"
       className="md:scroll-m-[100px] scroll-m-18"
     >
+      
       <div className="mb-12">
         <h3 className="text-3xl font-bold text-gray-900 mb-2">
-          Primary School Program
+          Primary School Program {""} 
         </h3>
         <p className="text-gray-600">
-          Building strong foundations for lifelong learning
+          Building strong foundations for lifelong learning {""} from <span className="font-bold text-amber-500">grade 1 </span> to <span className="font-bold text-amber-500">grade 5 </span>
         </p>
       </div>
 

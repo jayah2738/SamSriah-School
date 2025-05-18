@@ -169,7 +169,7 @@ const Mentor = () => {
                     </div>
                     <div className="flex items-center gap-2 text-gray-600">
                       <Icon icon="mdi:account-group" className="text-blue-500" />
-                      <span>150+ Students</span>
+                      <span>{items.StudentsNum}+ Students </span>
                     </div>
                   </div>
 

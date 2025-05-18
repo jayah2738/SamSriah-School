@@ -90,7 +90,7 @@ const Bus = () => {
                   </h4>
                   <ul className="space-y-2 text-gray-600">
                     <li>• Regular maintenance checks</li>
-                    <li>• GPS tracking system</li>
+                    <li>• GPS tracking system {"(Pending...)"}</li>
                     <li>• Emergency equipment onboard</li>
                   </ul>
                 </div>
