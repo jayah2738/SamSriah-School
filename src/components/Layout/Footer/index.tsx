@@ -96,7 +96,7 @@ const footer = () => {
         </div>
 
         <div className='mt-10 lg:flex items-center justify-between'>
-          <h4 className='text-black/50 text-sm text-center lg:text-start font-normal'>This website is made by <p  target="_blank" className="hover:text-green-500 text-amber-500"> wwww.HolyDev.com</p></h4>
+          <h4 className='text-black/50 text-sm text-center lg:text-start font-normal'>This website is made by <p className="hover:text-green-500 text-amber-500"> wwww.HolyDev.com</p></h4>
           <div className="flex gap-5 mt-5 lg:mt-0 justify-center lg:justify-start">
             {/* <Link href="/" target="_blank" className='text-black/50 text-sm font-normal hover:text-amber-500'>Privacy policy</Link>
             <Link href="/termConditions" target="_blank" className='text-black/50 text-sm font-normal hover:text-amber-500'>Terms & conditions</Link> */}
