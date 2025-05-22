@@ -1,3 +1,9 @@
+export interface Mentor {
+  name: string;
+  profession: string;
+  imgSrc: string;
+  description: string;
+}
 
 
 export const courseData: {
@@ -9,18 +15,18 @@ export const courseData: {
   price: string;
   rating: number;
 }[] = [
-  {
-    heading: 'Nursery',
-    imgSrc: '/images/documentation/nursery.jpg',
-    students: 10,
-    classes: 1,
-    price: '200.000',
-    rating: 4.5,
-    name: ""
-  },
+    {
+      heading: 'Nursery',
+      imgSrc: '/images/documentation/nursery.jpg',
+      students: 10,
+      classes: 1,
+      price: '200.000',
+      rating: 4.5,
+      name: ""
+    },
     {
       heading: 'PreSchool',
-      imgSrc: '/images/courses/preschool.png',
+      imgSrc: '/images/students/preschool.jpg',
       students: 20,
       classes: 4,
       price: '100.000',
@@ -29,196 +35,196 @@ export const courseData: {
     },
     {
       heading: 'Primary School',
-      imgSrc: '/images/courses/primary.png',
+      imgSrc: '/images/students/primaryschool.jpg',
       students: 20,
       classes: 5,
       price: '100.000',
       rating: 5,
-      name:""
+      name: ""
     },
     {
       heading: 'Middle School',
-      imgSrc: '/images/courses/middle.png',
+      imgSrc: '/images/students/middleschool.jpg',
       students: 20,
       classes: 4,
       price: '100.000',
       rating: 5,
-      name:""
+      name: ""
 
     },
     {
       heading: 'High School',
-      imgSrc: '/images/courses/high.png',
+      imgSrc: '/images/students/highschool.jpg',
       students: 20,
       classes: 7,
       price: '100.000',
       rating: 5,
-      name:""
+      name: ""
 
     }
   ]
 
-export const MentorData: { profession: string; name: string; imgSrc: string; description:string; StudentsNum:number  }[] = [
+export const MentorData = [
   {
-    profession: 'English Teacher',
+    professions: 'English Teacher',
     name: 'Mr.Haja',
     imgSrc: '/images/mentor/haja.jpg',
-    StudentsNum:60,
-    description:"I am an enthusiastic English teacher who specializes in helping students build strong reading, writing, and communication skills. With a focus on creativity and critical thinking.",
+    StudentsNum: 60,
+    description: "I am an enthusiastic English teacher who specializes in helping students build strong reading, writing, and communication skills. With a focus on creativity and critical thinking.",
   },
   {
-    profession: 'Physics Teacher',
+    professions: 'Physics Teacher',
     name: 'Mr.Manou',
     imgSrc: '/images/mentor/manou.jpg',
-    StudentsNum:100,
-    description:"I am a passionate Physics teacher who helps students explore the laws of nature through hands-on experiments and problem-solving, encouraging logical thinking and curiosity.",
+    StudentsNum: 100,
+    description: "I am a passionate Physics teacher who helps students explore the laws of nature through hands-on experiments and problem-solving, encouraging logical thinking and curiosity.",
   },
   {
-    profession: 'Informatics Teacher',
+    professions: 'Informatics Teacher',
     name: 'Mr.Mika',
     imgSrc: '/images/mentor/mika.jpg',
-    StudentsNum:20,
-    description:"I am a dedicated Informatics teacher who introduces students to the world of coding, digital tools, and problem-solving, fostering creativity and technical skills.",
+    StudentsNum: 20,
+    description: "I am a dedicated Informatics teacher who introduces students to the world of coding, digital tools, and problem-solving, fostering creativity and technical skills.",
   },
   {
-    profession: 'Science Teacher',
+    professions: 'Science Teacher',
     name: 'Mr.Tojo',
     imgSrc: '/images/mentor/tojosvt.jpg',
-    StudentsNum:80,
-    description:"I am an enthusiastic Science teacher who inspires students to discover the natural world through inquiry-based learning and scientific exploration.",
+    StudentsNum: 80,
+    description: "I am an enthusiastic Science teacher who inspires students to discover the natural world through inquiry-based learning and scientific exploration.",
   },
   {
-    profession: 'H&G Teacher',
+    professions: 'H&G Teacher',
     name: 'Mr.Christian',
     imgSrc: '/images/mentor/mr.christian.jpg',
-    StudentsNum:100,
-    description:"I am a committed History & Geography teacher who brings the past to life, helping students develop critical thinking by understanding historical events and their impact.",
+    StudentsNum: 100,
+    description: "I am a committed History & Geography teacher who brings the past to life, helping students develop critical thinking by understanding historical events and their impact.",
   },
   {
-    profession: 'Malagasy Teacher',
+    professions: 'Malagasy Teacher',
     name: 'Ms.Finaritra',
     imgSrc: '/images/mentor/finaritra.jpg',
-    StudentsNum:100,
-    description:"I am a proud Malagasy teacher who helps students strengthen their language skills while appreciating the richness of our culture and traditions.",
+    StudentsNum: 100,
+    description: "I am a proud Malagasy teacher who helps students strengthen their language skills while appreciating the richness of our culture and traditions.",
   },
   {
-    profession: 'S.E.S/ENG teacher',
+    professions: 'S.E.S/ENG teacher',
     name: 'Mrs.Lova',
     imgSrc: '/images/mentor/lovabe.jpg',
-    StudentsNum:100,
-    description:" am an engaged SES teacher who supports students in understanding social structures, economic systems, and their role as active citizens.",
-  },{
-    profession: 'Philosophy teacher',
+    StudentsNum: 100,
+    description: " am an engaged SES teacher who supports students in understanding social structures, economic systems, and their role as active citizens.",
+  }, {
+    professions: 'Philosophy teacher',
     name: 'Mrs.Maria',
     imgSrc: '/images/mentor/maria.jpg',
-    StudentsNum:100,
-    description:"I am a passionate philosophy teacher who helps students explore big questions, think critically, and understand different perspectives on life, ethics, and knowledge.",
+    StudentsNum: 100,
+    description: "I am a passionate philosophy teacher who helps students explore big questions, think critically, and understand different perspectives on life, ethics, and knowledge.",
   },
   {
-    profession: 'Grade 4 Teacher',
+    professions: 'Grade 4 Teacher',
     name: 'Ms.Lucy',
     imgSrc: '/images/mentor/lucy.jpg',
-    StudentsNum:20,
-    description:"I am a caring Grade 4 teacher who supports students in building strong foundations in literacy, numeracy, and social skills through engaging and inclusive learning.",
+    StudentsNum: 20,
+    description: "I am a caring Grade 4 teacher who supports students in building strong foundations in literacy, numeracy, and social skills through engaging and inclusive learning.",
   },
   ,
   {
-    profession: 'PS Teacher',
+    professions: 'PS Teacher',
     name: 'Mrs.Lanto',
     imgSrc: '/images/mentor/mme.lanto.jpg',
-    StudentsNum:20,
-    description:"I am a nurturing TPS teacher who helps young children take their first steps in learning through play, exploration, and gentle guidance.",
+    StudentsNum: 20,
+    description: "I am a nurturing TPS teacher who helps young children take their first steps in learning through play, exploration, and gentle guidance.",
   },
   {
-    profession: 'MS Teacher',
+    professions: 'MS Teacher',
     name: 'Mrs.Stephanie',
     imgSrc: '/images/mentor/mme.stephanie.jpg',
-    StudentsNum:20,
-    description:"I am a supportive PS teacher who encourages curiosity and confidence as young learners begin their educational journey through games and discovery.",
+    StudentsNum: 20,
+    description: "I am a supportive PS teacher who encourages curiosity and confidence as young learners begin their educational journey through games and discovery.",
   },
   {
-    profession: "GS Teacher",
+    professions: "GS Teacher",
     name: 'Mrs.Perline',
     imgSrc: '/images/mentor/mamie.jpg',
-    StudentsNum:20,
-    description:"I am a joyful MS teacher who helps children develop language, motor, and social skills through creative, age-appropriate activities.",
+    StudentsNum: 20,
+    description: "I am a joyful MS teacher who helps children develop language, motor, and social skills through creative, age-appropriate activities.",
   },
   {
-    profession: "TPS Teacher",
+    professions: "TPS Teacher",
     name: 'Ms.Ravaka',
     imgSrc: '/images/mentor/ravaka.jpg',
-    StudentsNum:20,
-    description:"I am a committed GS teacher who prepares children for primary school by building early literacy, numeracy, and independence in a fun, caring environment.",
+    StudentsNum: 20,
+    description: "I am a committed GS teacher who prepares children for primary school by building early literacy, numeracy, and independence in a fun, caring environment.",
   },
 ]
 
 export const TestimonialData: { profession: string; comment: string; imgSrc: string; name: string; rating: number; }[] = [
   {
-    name: "RANDRIANARISON Eric",
-    profession: 'Finidy"s Parents',
+    name: "Laza",
+    profession: "Finidy's Parent",
     comment: "It's so wonderful to study in 3S. I have four children and they are in a different grades. Just the first week of the first school year and I saw that my children have become intelligent. Thank you so much 3S",
     imgSrc: '/images/testimonial/user.svg',
     rating: 5
   },
   {
-    name: "RAFALIMANANA OGE",
-    profession: 'Tiko"s Parents',
+    name: "Sandra",
+    profession: "Ckeziah's Parent",
     comment: "Enrolling our daughter at Sunrise Academy was the best decision we ever made. Her confidence has soared, and she’s consistently achieving top scores. We’re so proud of her progress!",
     imgSrc: '/images/mentor/user2.png',
     rating: 5
   },
   {
-    name: "RAKOTONIRINA JEAN",
-    profession: 'Kennedy"s Parents',
+    name: "Rija",
+    profession: "Nick's Parent",
     comment: "The dedication of the teachers is outstanding. Our son won his first science fair because of the school’s focus on hands-on learning. We’re beyond grateful.",
     imgSrc: '/images/mentor/user3.png',
     rating: 5
   },
   {
-    name: "RANDRIAMANJAKA GEORGE",
-    profession: 'Noé"s Parents',
+    name: "Niry",
+    profession: "Kaysha's Parent",
     comment: "Our child went from shy and quiet to class president in one year. The school nurtures leadership in such a natural and encouraging way.",
     imgSrc: '/images/mentor/user1.png',
     rating: 5
   },
   {
-    name: "LALAINAMANANTSOA BOARA",
-    profession: 'Mendrika"s Parents',
+    name: "Rovaniaina",
+    profession: "Cando's Parent",
     comment: "We’ve seen a huge improvement in our son's reading and writing skills. The teachers tailor learning to each child – and it shows in the results.",
     imgSrc: '/images/mentor/user2.png',
     rating: 5
   },
   {
-    name: "NAMANANIAINA MALALA",
-    profession: 'Hery"s Parents',
+    name: "Garcia",
+    profession: "Hantatian's Parent",
     comment: "Thanks to the school’s incredible support, our daughter received a scholarship to her dream high school. This place truly prepares kids for the future.",
     imgSrc: '/images/mentor/user3.png',
     rating: 5
   },
   {
-    name: "NAMANANIAINA MALALA",
-    profession: 'Hery"s Parents',
+    name: "Olga",
+    profession: "Elidah's Parent",
     comment: "The school's program is phenomenal. Our son is now two grade levels ahead and absolutely loves learning.",
     imgSrc: '/images/mentor/user3.png',
     rating: 5
   },
   {
-    name: "NAMANANIAINA MALALA",
-    profession: 'Hery"s Parents',
+    name: "Solofo",
+    profession: "Anaïs' Parent",
     comment: "I appreciate how the school teaches character alongside academics. Our child is thriving not just as a student, but as a kind, responsible human being.",
     imgSrc: '/images/mentor/user3.png',
     rating: 5
   },
   {
-    name: "NAMANANIAINA MALALA",
-    profession: 'Hery"s Parents',
+    name: "Odon",
+    profession: "Fifaliana's Parent",
     comment: "The school helps my daughter discover her talent in coding, desgning and many more about informatics. That leads my daughter to a new life and the best ever.",
     imgSrc: '/images/mentor/user3.png',
     rating: 5
   },
   {
-    name: "NAMANANIAINA MALALA",
-    profession: 'Hery"s Parents',
+    name: "Malala",
+    profession: "Samilia's Parent",
     comment: "We’ve been part of the school community for five years, and every year we see new achievements. It just keeps getting better.",
     imgSrc: '/images/mentor/user3.png',
     rating: 5

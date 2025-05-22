@@ -17,8 +17,8 @@ const Courses = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
-        autoplay: true,
-        speed: 5000,
+        autoplay: false,
+        speed: 100,
         cssEase: "ease-in-out",
         responsive: [
             {
@@ -101,9 +101,9 @@ const Courses = () => {
                                             className="object-cover w-full h-80 transform group-hover:scale-110 transition-transform duration-500"
                                         />
                                     </div>
-                                    <div className="absolute right-5 -bottom-4 bg-gradient-to-r from-amber-500 to-amber-600 rounded-full p-4 shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                                    {/* <div className="absolute right-5 -bottom-4 bg-gradient-to-r from-amber-500 to-amber-600 rounded-full p-4 shadow-lg transform group-hover:scale-110 transition-transform duration-300">
                                         <h3 className="text-white uppercase text-center text-sm font-semibold">The best <br /> Way</h3>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 <div className="p-6">
@@ -115,7 +115,7 @@ const Courses = () => {
                                         <div className="flex items-center justify-between">
                                             <div className="flex items-center gap-2">
                                                 {renderStars(items.rating)}
-                                                <span className="text-gray-600 font-medium">{items.rating}</span>
+                                                
                                             </div>
                                             <div className="flex items-center gap-2">
                                                 <Icon icon="tabler:users" className="text-gray-600 text-xl" />

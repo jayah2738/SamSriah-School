@@ -178,11 +178,11 @@ const Header: React.FC = () => {
 
             {/*  */}
 
-            <button
+            {/* <button
               onClick={() => setNavbarOpen(false)}
               className="bg-[url('/images/closed.svg')] bg-no-repeat bg-contain w-5 h-5 absolute top-0 right-0 mr-4 mt-6 bg-red-500 px-3 py-3 rounded-full"
               aria-label="Close menu Modal"
-            ></button>
+            ></button> */}
           </div>
           <nav className="flex flex-col items-start p-4 text-gray-500 bg-white">
             {headerData.map((item, index) => (

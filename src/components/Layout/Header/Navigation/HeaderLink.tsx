@@ -71,8 +71,8 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
                 key={index}
                 href={subItem.href}
                 className={`block px-4 py-2 ${isSubItemActive
-                    ? "bg-primary text-white"
-                    : "text-black dark:text-white hover:bg-primary"
+                    ? "bg-amber-500 text-white"
+                    : "text-black dark:text-white hover:bg-amber*500"
                   }`}
               >
                 {subItem.label}

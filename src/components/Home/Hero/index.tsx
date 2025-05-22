@@ -126,7 +126,7 @@ const Hero = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-600">Enrollment Open</p>
-                    <p className="text-amber-600 font-semibold">2024-2025</p>
+                    <p className="text-amber-600 font-semibold">2025-2026</p>
                   </div>
                 </div>
               </div>

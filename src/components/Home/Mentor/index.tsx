@@ -19,8 +19,8 @@ const Mentor = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
-    autoplay: true,
-    speed: 2000,
+    autoplay: false,
+    speed: 100,
     cssEase: "ease-in-out",
     responsive: [
       {
@@ -124,7 +124,7 @@ const Mentor = () => {
         </div>
 
         <Slider {...settings}>
-          {MentorData.map((items, i) => (
+          {MentorData.map((items:any, i:any) => (
             <motion.div
               variants={fadeIn("up", 0.5)}
               initial="hidden"

@@ -17,8 +17,8 @@ const Testimonial = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    autoplay: true,
-    speed: 1000,
+    autoplay: false,
+    speed: 100,
     cssEase: "ease-in-out",
     responsive: [
       {
@@ -128,7 +128,7 @@ const Testimonial = () => {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2 text-gray-600">
                       <Icon icon="mdi:calendar" className="text-amber-500" />
-                      <span className="text-sm">{items.date}</span>
+                      {/* <span className="text-sm">{items.date}</span> */}
                     </div>
                     <div className="flex items-center gap-2 text-gray-600">
                       <Icon icon="mdi:school" className="text-amber-500" />

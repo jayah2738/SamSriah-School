@@ -100,7 +100,7 @@ const Bus = () => {
                     Student Safety
                   </h4>
                   <ul className="space-y-2 text-gray-600">
-                    <li>• Seat belts for all passengers</li>
+                    {/* <li>• Seat belts for all passengers</li> */}
                     <li>• Supervised boarding and drop-off</li>
                     <li>• Emergency contact system</li>
                   </ul>

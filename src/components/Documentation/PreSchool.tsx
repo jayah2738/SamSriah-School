@@ -1,10 +1,9 @@
 "use client";
 import Image from "next/image";
-import preschool from "/public/images/documentation/PreSchool.png";
-import kindergarten from "/public/images/documentation/Kindergarten.png";
-import primaryschool from "/public/images/documentation/PrimarySchool.png";
-import middleschool from "/public/images/documentation/MiddleSchool.png";
-import highschool from "/public/images/documentation/HighSchool.png";
+import preschool from "/public/images/students/preschool.jpg";
+import primaryschool from "/public/images/students/primaryschool.jpg";
+import middleschool from "/public/images/students/middleschool.jpg";
+import highschool from "/public/images/students/highschool.jpg";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useState } from "react";
 import { DocNavigation } from "./DocNavigation";
@@ -18,13 +17,6 @@ export const Introduction = () => {
       img: preschool,
       version: "PreSchool",
       description: "Foundational learning for young minds"
-    },
-    {
-      id: "2",
-      packageName: "Eng-Fr",
-      img: kindergarten,
-      version: "Kindergarten",
-      description: "Play-based learning environment"
     },
     {
       id: "3",
@@ -74,11 +66,11 @@ export const Introduction = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="flex flex-col gap-8 xl:flex-row lg:flex-row md:flex-col ">
           {SectionsImages.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
+              className="w-72 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
             >
               <div className="relative h-48">
                 <Image

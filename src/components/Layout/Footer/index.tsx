@@ -52,11 +52,7 @@ const footer = () => {
                   About Us
                 </Link>
               </li>
-              <li className="mb-2 text-black/50 hover:text-amber-500 w-fit">
-                {/* <Link href="#"> */}
-                  Register
-                {/* </Link> */}
-              </li>
+              
               <li className="mb-2 text-black/50 hover:text-amber-500 w-fit">
                 {/* <Link href="#"> */}
                   Extracuricular

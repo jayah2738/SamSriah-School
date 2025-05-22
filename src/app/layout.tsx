@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import CustomCursor from "@/components/CursorCustom/CursorCustom";
 // import ScrollToTop from "@/components/ScrollToTop";
 const font = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700"], });
 
@@ -17,6 +18,7 @@ export default function RootLayout({
           enableSystem={true}
           defaultTheme="light"
         >
+          <CustomCursor/>
           {children}
         </ThemeProvider>
       </body>
