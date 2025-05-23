@@ -15,14 +15,14 @@ const Hero = () => {
   };
 
   return (
-    <section id="home-section" className="relative bg-gradient-to-br from-amber-50 to-white overflow-hidden">
+    <section id="home-section" className="w-full bg-gradient-to-br from-amber-50 to-white overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-amber-100 rounded-full opacity-20 blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-amber-200 rounded-full opacity-20 blur-3xl" />
       </div>
 
-      <div className="container mx-auto lg:pt-20 lg:max-w-screen-xl xl:max-w-screen-2xl md:max-w-screen-md relative z-10">
+      <div className="container ml-5 xl:ml-0 lg:pt-20 lg:max-w-screen-xl xl:max-w-screen-2xl md:max-w-screen-md relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="col-span-7 flex flex-col gap-8 px-4">
             <motion.div

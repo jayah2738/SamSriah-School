@@ -11,6 +11,7 @@ import SignUp from "@/components/Auth/SignUp";
 import { useTheme } from "next-themes";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { motion } from "framer-motion";
+import ThemeToggler from "./ThemeToggler";
 
 const Header: React.FC = () => {
   const pathUrl = usePathname();
@@ -80,7 +81,7 @@ const Header: React.FC = () => {
         delay: 0.2,
         ease:[0.25,0.25,0.25,0.1]
       }}
-      className={`fixed top-0 z-40 w-full flex justify-center pb-3 transition-all duration-300 bg-white ${
+      className={`fixed top-0 z-40 w-full flex justify-center pb-3 transition-all duration-300 border-1  bg-white ${
         sticky ? " shadow-lg py-3" : "shadow-none py-3"
       }`}
     >

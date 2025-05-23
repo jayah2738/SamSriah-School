@@ -16,12 +16,11 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex flex-col justify-center w-full">
       <Header />
       <Hero />
       <Courses />
       <Mentor />
-      {/* <AskMe/> */}
       <Canteen/>
       <Bus/>
       <Testimonial />

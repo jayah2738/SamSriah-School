@@ -2,18 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+html,body{
+  overflow-x: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
 }
 
 body{
-  overflow-x: hidden;
   background-color: white;
 }
 
 section {
-  @apply py-20;
-  /* @apply px-5 */
+  @apply py-24;
+
 }
 
 .slick-dots {
