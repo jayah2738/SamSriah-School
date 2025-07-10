@@ -50,7 +50,7 @@ const footer = () => {
               
               <li className="mb-2 text-black/50 hover:text-amber-500 w-fit">
                 {/* <Link href="#"> */}
-                  Extracuricular (Pending...)
+                  Extracurricular (Pending...)
                 {/* </Link> */}
               </li>
              
