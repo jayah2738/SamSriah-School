@@ -81,7 +81,7 @@ const Header: React.FC = () => {
         delay: 0.2,
         ease:[0.25,0.25,0.25,0.1]
       }}
-      className={`fixed top-0 z-40 w-full flex justify-center pb-3 transition-all duration-300 border-1  bg-white ${
+      className={`fixed top-0 z-40 w-full flex justify-center pb-3 transition-all duration-300 border-1  bg-amber-50 ${
         sticky ? " shadow-lg py-3" : "shadow-none py-3"
       }`}
     >

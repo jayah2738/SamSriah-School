@@ -138,7 +138,7 @@ const Mentor = () => {
                   <div className="aspect-square relative max-w-[140px] mx-auto mt-6">
                     <Image
                       src={items.imgSrc}
-                      alt={`${items.name} - ${items.profession}`}
+                      alt={`${items.name} - ${items.professions}`}
                       width={140}
                       height={140}
                       className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500 rounded-full p-2"
@@ -154,7 +154,7 @@ const Mentor = () => {
                   >
                     {items.name}
                   </motion.h3>
-                  <p className="text-amber-600 font-medium mb-2">{items.profession}</p>
+                  <p className="text-amber-600 font-medium mb-2">{items.professions}</p>
                   
                   <div className="min-h-[50px] mb-4 px-2">
                     <p className="text-gray-700 text-sm leading-relaxed font-medium">

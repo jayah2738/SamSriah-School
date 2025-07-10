@@ -24,7 +24,7 @@ const menuItems: MenuItem[] = [
     id: 2,
     name: "Traditional Lunch",
     description: "Rice with vegetables and choice of protein",
-    price: "10,000 Ar",
+    price: "7,000 Ar",
     image: "/images/canteen/traditionalunch.jpg",
     category: "lunch"
   },

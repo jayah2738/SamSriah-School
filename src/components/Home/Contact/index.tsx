@@ -49,7 +49,7 @@ const Contact = () => {
       });
 
       const data = await res.json();
-      console.log("Response data:", data); 
+      console.log("Response data:", data);
 
       if (!res.ok) throw new Error(data.error || "Failed to send message");
       setSuccess("Message sent successfully!");
@@ -60,12 +60,8 @@ const Contact = () => {
   };
 
   return (
-    <motion.section
+    <section
       id="contact-form"
-      variants={fadeIn("left", 0.2)}
-      initial="hidden"
-      whileInView={"show"}
-      viewport={{ once: false, amount: 0.7 }}
       className=" sm:p-20 z-[-50] "
       style={{
         backgroundImage: "url('/images/newsletter/contactbg.png')",
@@ -105,7 +101,7 @@ const Contact = () => {
           action="#"
           method="POST"
           onSubmit={handleSubmit}
-          className="mx-auto bg-white sm:m-0 rounded-none xl:rounded-[35px]  p-6 max-w-xl sm:mt-10"
+          className="mx-auto bg-white sm:m-0 rounded-none xl:rounded-[10px]  p-6 max-w-xl sm:mt-10"
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
@@ -248,7 +244,7 @@ const Contact = () => {
           )}
         </motion.form>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

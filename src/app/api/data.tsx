@@ -15,18 +15,18 @@ export const courseData: {
   price: string;
   rating: number;
 }[] = [
-    {
-      heading: 'Nursery',
-      imgSrc: '/images/documentation/nursery.jpg',
-      students: 10,
-      classes: 1,
-      price: '200.000',
-      rating: 4.5,
-      name: ""
-    },
+    // {
+    //   heading: 'Nursery',
+    //   imgSrc: '/images/documentation/nursery.jpg',
+    //   students: 10,
+    //   classes: 1,
+    //   price: '200.000',
+    //   rating: 4.5,
+    //   name: ""
+    // },
     {
       heading: 'PreSchool',
-      imgSrc: '/images/students/preschool.jpg',
+      imgSrc: '/images/courses/preschool.png',
       students: 20,
       classes: 4,
       price: '100.000',
@@ -35,7 +35,7 @@ export const courseData: {
     },
     {
       heading: 'Primary School',
-      imgSrc: '/images/students/primaryschool.jpg',
+      imgSrc: '/images/courses/primary.png',
       students: 20,
       classes: 5,
       price: '100.000',
@@ -44,7 +44,7 @@ export const courseData: {
     },
     {
       heading: 'Middle School',
-      imgSrc: '/images/students/middleschool.jpg',
+      imgSrc: '/images/courses/middle.png',
       students: 20,
       classes: 4,
       price: '100.000',
@@ -54,7 +54,7 @@ export const courseData: {
     },
     {
       heading: 'High School',
-      imgSrc: '/images/students/highschool.jpg',
+      imgSrc: '/images/courses/high.png',
       students: 20,
       classes: 7,
       price: '100.000',
@@ -105,14 +105,34 @@ export const MentorData = [
     name: 'Ms.Finaritra',
     imgSrc: '/images/mentor/finaritra.jpg',
     StudentsNum: 100,
-    description: "I am a proud Malagasy teacher who helps students strengthen their language skills while appreciating the richness of our culture and traditions.",
+    description: "I am a proud Malagasy teacher who helps students to learn our Native Language while appreciating the richness of our culture and traditions.",
+  },
+  {
+    professions: 'French Teacher',
+    name: 'Mrs.Lova',
+    imgSrc: '/images/mentor/lovafr.jpg',
+    StudentsNum: 100,
+    description: "I am a French teacher who helps students strengthen their language skills while discovering new culture and traditions.",
+  },
+  {
+    professions: 'Informatics Teacher',
+    name: 'Mrs.Mirindra',
+    imgSrc: '/images/mentor/mirindra.jpg',
+    StudentsNum: 40,
+    description: "It's my passion to help students grow smartly! Skills make you different! ",
+  },{
+    professions: 'Informatics Teacher',
+    name: 'Mrs.Malalatiana',
+    imgSrc: '/images/mentor/malalatiana.jpg',
+    StudentsNum: 60,
+    description: "I help students achieve their goals, mainly about informatics. Let's achieve it together! ",
   },
   {
     professions: 'S.E.S/ENG teacher',
     name: 'Mrs.Lova',
     imgSrc: '/images/mentor/lovabe.jpg',
     StudentsNum: 100,
-    description: " am an engaged SES teacher who supports students in understanding social structures, economic systems, and their role as active citizens.",
+    description: "I am an engaged SES teacher who supports students in understanding social structures, economic systems, and their role as active citizens.",
   }, {
     professions: 'Philosophy teacher',
     name: 'Mrs.Maria',
@@ -147,14 +167,14 @@ export const MentorData = [
     name: 'Mrs.Perline',
     imgSrc: '/images/mentor/mamie.jpg',
     StudentsNum: 20,
-    description: "I am a joyful MS teacher who helps children develop language, motor, and social skills through creative, age-appropriate activities.",
+    description: "I am a joyful GS teacher who helps children develop language, motor, and social skills through creative, age-appropriate activities.",
   },
   {
     professions: "TPS Teacher",
     name: 'Ms.Ravaka',
     imgSrc: '/images/mentor/ravaka.jpg',
     StudentsNum: 20,
-    description: "I am a committed GS teacher who prepares children for primary school by building early literacy, numeracy, and independence in a fun, caring environment.",
+    description: "I am a committed TPS teacher who prepares children for primary school by building early literacy, numeracy, and independence in a fun, caring environment.",
   },
 ]
 
@@ -169,7 +189,7 @@ export const TestimonialData: { profession: string; comment: string; imgSrc: str
   {
     name: "Sandra",
     profession: "Ckeziah's Parent",
-    comment: "Enrolling our daughter at Sunrise Academy was the best decision we ever made. Her confidence has soared, and she’s consistently achieving top scores. We’re so proud of her progress!",
+    comment: "Enrolling our daughter at SamSriah School was the best decision we ever made. Her confidence has soared, and she’s consistently achieving top scores. We’re so proud of her progress!",
     imgSrc: '/images/mentor/user2.png',
     rating: 5
   },
@@ -195,16 +215,16 @@ export const TestimonialData: { profession: string; comment: string; imgSrc: str
     rating: 5
   },
   {
-    name: "Garcia",
-    profession: "Hantatian's Parent",
-    comment: "Thanks to the school’s incredible support, our daughter received a scholarship to her dream high school. This place truly prepares kids for the future.",
+    name: "Odon",
+    profession: "fifaliana's Parent",
+    comment: "Thanks to the school’s incredible support, our daughter is really motivated to achieve her dream. This place truly prepares kids for the future.",
     imgSrc: '/images/mentor/user3.png',
     rating: 5
   },
   {
     name: "Olga",
     profession: "Elidah's Parent",
-    comment: "The school's program is phenomenal. Our son is now two grade levels ahead and absolutely loves learning.",
+    comment: "The school's program is phenomenal. My daughter is now 10th grade and absolutely loves learning.",
     imgSrc: '/images/mentor/user3.png',
     rating: 5
   },
@@ -216,8 +236,8 @@ export const TestimonialData: { profession: string; comment: string; imgSrc: str
     rating: 5
   },
   {
-    name: "Odon",
-    profession: "Fifaliana's Parent",
+    name: "Garcia",
+    profession: "Hantatiana's Parent",
     comment: "The school helps my daughter discover her talent in coding, desgning and many more about informatics. That leads my daughter to a new life and the best ever.",
     imgSrc: '/images/mentor/user3.png',
     rating: 5

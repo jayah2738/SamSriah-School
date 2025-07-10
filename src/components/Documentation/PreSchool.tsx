@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import preschool from "/public/images/students/preschool.jpg";
-import primaryschool from "/public/images/students/primaryschool.jpg";
-import middleschool from "/public/images/students/middleschool.jpg";
-import highschool from "/public/images/students/highschool.jpg";
+import preschool from "/public/images/courses/preschool.png";
+import primaryschool from "/public/images/courses/primary.png";
+import middleschool from "/public/images/courses/middle.png";
+import highschool from "/public/images/courses/high.png";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useState } from "react";
 import { DocNavigation } from "./DocNavigation";
@@ -52,7 +52,7 @@ export const Introduction = () => {
         )}
 
         <div className="flex items-center justify-between mb-8">
-          <div>
+          <div className="mt-24">
             <h3 className="text-3xl font-bold text-gray-900 mb-2">
               Introduction | PreSchool
             </h3>
@@ -93,11 +93,51 @@ export const Introduction = () => {
           <div className="bg-white rounded-2xl shadow-lg p-6">
             <h4 className="text-xl font-semibold text-gray-900 mb-4">About Our School</h4>
             <p className="text-gray-600 mb-4">
-              <span className="text-amber-500 font-bold">SAMSRIAH SCHOOL</span> is an English and French expressions school with a decade of excellence in education.
+              <span className="text-amber-500 font-bold">SAMSRIAH SCHOOL</span> is an English and French bilingual school with a decade of excellence in education.
             </p>
             <p className="text-gray-600 mb-4">
-              Our dedicated teachers follow the Malagasy Ministry's Programs while maintaining English and French as the primary languages of communication.
+              Our dedicated teachers follow the Malagasy Ministry's Programs while maintaining English and French as the languages of communication.
             </p>
+          </div>
+          <div className="postcard grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+              <div className="one_card w-full">
+                <Image src='/images/cards/InfoCard - English.png' alt="img" width={500} height={100} />
+              </div>
+              <div className="one_card w-full">
+                <Image src='/images/cards/InfoCard - French.png' alt="img" width={500} height={100} />
+              </div>
+              {/* <div className="one_card w-full">
+                <Image src='/images/cards/InfoCard - Chinese.png' alt="img" width={500} height={100} />
+              </div> */}
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-lg p-6">
+            <h4 className="text-xl font-semibold text-gray-900 mb-4">Our Tuition fees</h4>
+            <div className="text-gray-600 mb-4">
+              <span className="text-green-500 font-bold">Enrollement:</span>
+              <br /><div>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">Enrollement fee:</span> 750.000fmg or 150.000MGA</li>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">General fee:</span> 150.000fmg or 30.000MGA</li>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">Tuition fee per month:</span> 500.000fmg or 100.000MGA</li>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">PE (Physical Education) uniform:</span> 200.000fmg or 40.000MGA</li>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">School bus fee per day:</span> 35.000fmg or 7.000MGA</li>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">Canteen lunch fee per meal:</span> 35.000fmg or 7.000MGA</li>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">Report Card:</span> 15.000fmg or 3.000MGA</li>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">Correspondace book:</span> 15.000fmg or 3.000MGA</li>
+              </div>
+              <br /> <span className="text-green-500 font-bold">Re-Enrollement:</span>
+              <br /><div>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">Re-Enrollement fee:</span> 450.000fmg or 90.000MGA</li>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">General fee:</span> 150.000fmg or 30.000MGA</li>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">Tuition fee per month:</span> 500.000fmg or 100.000MGA</li>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">PE (Physical Education) uniform:</span> 200.000fmg or 40.000MGA</li>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">School bus fee per day:</span> 35.000fmg or 7.000MGA</li>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">Canteen lunch fee per meal:</span> 35.000fmg or 7.000MGA</li>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">Report Card:</span> 15.000fmg or 3.000MGA</li>
+                <br /><li className="text-gray-600 "><span className="text-amber-600 font-bold">Correspondace book:</span> 15.000fmg or 3.000MGA</li>
+              </div>
+            </div>
+            
           </div>
 
           <div className="bg-white rounded-2xl shadow-lg p-6">

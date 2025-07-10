@@ -90,7 +90,7 @@ const Courses = () => {
                             viewport={{ once: false, amount: 0.7 }}
                             className="px-3"
                         >
-                            <div className='group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2'>
+                            <div className='group bg-amber-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2'>
                                 <div className="relative overflow-hidden">
                                     <div className="aspect-w-16 aspect-h-9 rounded-t-r-2xl rounded-b-l-2xl">
                                         <Image
@@ -107,9 +107,9 @@ const Courses = () => {
                                 </div>
 
                                 <div className="p-6">
-                                    <Link href="#" className='block'>
+                                    <div className='block'>
                                         <h3 className='text-2xl font-bold text-gray-900 hover:text-amber-600 transition-colors duration-300 mb-4'>{items.heading}</h3>
-                                    </Link>
+                                    </div>
                                     
                                     <div className="space-y-4 py-4 border-t border-gray-100">
                                         <div className="flex items-center justify-between">

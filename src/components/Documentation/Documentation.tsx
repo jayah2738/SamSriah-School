@@ -14,7 +14,7 @@ export const Documentation = () => {
                 <div className="grid grid-cols-12 gap-8">
                     <div className="lg:col-span-3 col-span-12 lg:block hidden">
                         <div className="sticky top-40">
-                            <div className="bg-white rounded-2xl shadow-lg p-6 border border-amber-100">
+                            <div className=" hidden lg:block bg-white rounded-2xl shadow-lg p-6 border border-amber-100">
                                 <DocNavigation />
                             </div>
                         </div>
